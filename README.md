@@ -4,7 +4,7 @@
 к примеру технологию Docker и возможно Kubernetes.
 2. Backend приложения написан на языке Java как Spring Boot Application с использованием Spring Restful контроллеров.
 3. Базы данных не использовались.
-4. Использованы стек фреймворов Spring (Spring Core, Spring Restful Web Services), также используется ряд библиотек, 
+4. Использованы стек фреймворков Spring (Spring Core, Spring Restful Web Services), также используется ряд библиотек, 
 к примеру jackson библиотеки для работы с json, библиотеки логгирования slf4j, log4j, библиотеки типичных функций 
 apache commons, commons-collections, google guava и gson. 
 5. На данный момент у компонента нет дополнительных зависимостей и настроек.
