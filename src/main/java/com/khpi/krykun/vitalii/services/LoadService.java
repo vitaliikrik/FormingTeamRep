@@ -23,11 +23,11 @@ public class LoadService {
         try {
             Date startDate = new SimpleDateFormat(DATE_FORMAT).parse(task.getStartDate());
 
-            Double hoursLeft = Double.parseDouble(task.getComplexity());//check for format hh:mm
+            Double hoursLeft = Double.parseDouble(task.getComplexity());
             Date currentDate = startDate;
             do {
                 if (!isHoliday(currentDate)) {
-                    double hoursLoaded = 0d;
+                    double hoursLoaded;
                     String currentDateString = new SimpleDateFormat(DATE_FORMAT).format(currentDate);
                     LoadingEntity currentDayLoad = employee.getLoadOfWork().stream()
                             .filter(candidateLoad -> StringUtils.equals(candidateLoad.getDate(), currentDateString))

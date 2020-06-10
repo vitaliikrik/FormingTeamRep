@@ -69,7 +69,7 @@ public class RestrictionsService {
             Date startDate = new SimpleDateFormat(DATE_FORMAT).parse(task.getStartDate());
             Date deadLine = new SimpleDateFormat(DATE_FORMAT).parse(task.getDeadLine());
 
-            Double hoursLeft = Double.parseDouble(task.getComplexity());//check for format hh:mm
+            Double hoursLeft = Double.parseDouble(task.getComplexity());
             Date currentDate = startDate;
             boolean isTimeSufficient = false;
             do {

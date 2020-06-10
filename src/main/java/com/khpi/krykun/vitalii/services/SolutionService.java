@@ -79,7 +79,7 @@ public class SolutionService {
         return taskWithMinimalSet;
     }
 
-    private Map<Employee, Set<Task>> getAlongsideMap(Task task, Map<Employee, Set<Task>> employeesMap, Set<Employee> capableEmployees) {//Map<Employee, Set<Task>> employeesMap
+    private Map<Employee, Set<Task>> getAlongsideMap(Task task, Map<Employee, Set<Task>> employeesMap, Set<Employee> capableEmployees) {
         Map<Employee, Set<Task>> resultAlongsideMap = new LinkedHashMap<>();
         for (Map.Entry<Employee, Set<Task>> entry : employeesMap.entrySet()) {
             Employee currentEmployee = entry.getKey();
